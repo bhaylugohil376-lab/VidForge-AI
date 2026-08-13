@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>AI Video Generator</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="navbar">
+    <div class="logo">🎬 AI Video Generator</div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#generator">Generate</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+
+  <main>
+
+    <section id="home" class="hero">
+      <h1>Create Videos With AI</h1>
+
+      <p>
+        Enter your idea and generate an AI video from your text.
+      </p>
+
+      <a href="#generator" class="start-btn">
+        Start Creating
+      </a>
+    </section>
+
+
+    <section id="generator" class="generator">
+
+      <h2>AI Video Generator</h2>
+
+      <textarea
+        id="prompt"
+        placeholder="Example: A cinematic sunset over the mountains..."
+      ></textarea>
+
+      <div class="options">
+
+        <select id="ratio">
+          <option value="16:9">16:9 Landscape</option>
+          <option value="9:16">9:16 Portrait</option>
+          <option value="1:1">1:1 Square</option>
+        </select>
+
+        <select id="duration">
+          <option value="5">5 Seconds</option>
+          <option value="10">10 Seconds</option>
+          <option value="15">15 Seconds</option>
+        </select>
+
+      </div>
+
+      <button id="generateBtn">
+        🎥 Generate Video
+      </button>
+
+      <div id="status"></div>
+
+      <div id="result" class="result">
+        <p>Your generated video will appear here.</p>
+      </div>
+
+    </section>
+
+
+    <section id="about" class="about">
+
+      <h2>About</h2>
+
+      <p>
+        AI Video Generator is a web application that allows users
+        to create videos using AI.
+      </p>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+    <p>© 2026 AI Video Generator</p>
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
